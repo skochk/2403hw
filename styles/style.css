@@ -42,7 +42,7 @@ p {
   -ms-grid-column: 2;
   -ms-grid-column-span: 4;
   grid-area: b;
-  background-color: red;
+  background: url("https://i.pinimg.com/originals/76/92/79/76927939ad6134c1b5b0fa472803ca4b.png");
 }
 
 .itemc {
@@ -113,5 +113,17 @@ p {
         grid-template-rows: repeat(10, 100px);
         grid-template-areas: "a" "b" "c" "d" "e" "f" "g" "k" "m" "n";
   }
+}
+
+.item {
+  -webkit-transition: -webkit-filter ease .3s;
+  transition: -webkit-filter ease .3s;
+  transition: filter ease .3s;
+  transition: filter ease .3s, -webkit-filter ease .3s;
+}
+
+.parent:hover > .item:not(:hover) {
+  -webkit-filter: blur(7px);
+          filter: blur(7px);
 }
 /*# sourceMappingURL=style.css.map */

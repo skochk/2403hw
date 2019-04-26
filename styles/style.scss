@@ -38,6 +38,8 @@ p{
 .itema{
     border: solid red 1px;
     grid-area: a;
+
+
 }   
 
 .itemb{
@@ -46,7 +48,8 @@ p{
     // grid-row-start: 1;
     // grid-row-end: 4;
     grid-area: b;
-    background-color: red;
+    background: url("https://i.pinimg.com/originals/76/92/79/76927939ad6134c1b5b0fa472803ca4b.png");
+    
 
 }
 
@@ -85,6 +88,7 @@ p{
     // grid-column-end: 7;
     grid-area: m;
     background-color: #cd36cd;
+    
 }
 
 .itemn{
@@ -114,3 +118,52 @@ p{
         "n";
     }
 }
+
+
+// .itema:hover ~
+//     .itemb {
+//         filter: blur(10px);
+//     }
+
+// .itemc:hover ~
+//     .itemb {
+//         filter: blur(10px);
+//     }
+//  .itemd:hover ~
+//     .itemb {
+//         filter: blur(10px);
+//     }
+//  .iteme:hover ~
+//     .itemb {
+//         filter: blur(10px);
+//     }
+// .itemf:hover ~
+//     .itemb {
+//         filter: blur(10px);
+//     }
+//  .itemg:hover ~
+//     .itemb {
+//         filter: blur(10px);
+//     }
+   
+// .itemk:hover ~
+//     .itemb {
+//         filter: blur(10px);
+//     }
+// .itemm:hover ~
+//     .itemb {
+//         filter: blur(10px);
+//     }
+// .itemn:hover ~
+//     .itemb {
+//         filter: blur(10px);
+//     }
+    // .itemc, .itemd, .iteme, .itemf,.itemg,.itemk,.itemm,.itemn
+
+    .item{
+        transition: filter ease .3s;
+    }
+
+    .parent:hover > .item:not(:hover) {
+                filter: blur(7px);
+    }

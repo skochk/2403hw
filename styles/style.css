@@ -111,7 +111,7 @@ p {
     grid-gap: 0px;
     -ms-grid-rows: (100px)[10];
         grid-template-rows: repeat(10, 100px);
-        grid-template-areas: "a" "b" "c" "d" "e" "d" "f" "g" "k" "m" "n";
+        grid-template-areas: "a" "b" "c" "d" "e" "f" "g" "k" "m" "n";
   }
 }
 /*# sourceMappingURL=style.css.map */
